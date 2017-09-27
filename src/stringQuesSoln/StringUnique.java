@@ -1,4 +1,4 @@
-package stringQuesSoln09_25;
+package stringQuesSoln;
 
 public class StringUnique {
 

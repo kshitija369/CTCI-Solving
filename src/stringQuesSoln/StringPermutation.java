@@ -1,4 +1,4 @@
-package stringQuesSoln09_25;
+package stringQuesSoln;
 
 public class StringPermutation {
 	
@@ -15,17 +15,16 @@ public class StringPermutation {
 			return false;
 		}
 		int[] charset1 = new int[128];
-		int[] charset2 = new int[128];
 		// Count number of occurrence of each letter in both strings
 		for(int i = 0; i < str1.length(); i++){
 			int val = (int)str1.charAt(i);
 			charset1[val]++;
 			val = (int)str2.charAt(i);
-			charset2[val]++;
+			charset1[val]--;
 		}
 		// Check if count matches
 		for(int i = 0; i < 128; i++){
-			if(charset1[i] != charset2[i]){
+			if(charset1[i] != 0){
 				return false;
 			}
 		}

@@ -1,4 +1,4 @@
-package stringQuesSoln09_25;
+package stringQuesSoln;
 
 public class URLify {
 
@@ -13,14 +13,7 @@ public class URLify {
 	//please use a character array so that you can perform this operation in place.)
 	public static char[] URLify(char[] str, int truelen){
 			
-			int countSpc = 0; 
-			//Pass1: Find no. of wide spaces in String
-			for (int i = 0; i < truelen; i++) {
-				if(str[i] == ' '){
-					countSpc++;
-				}
-			}
-			int actLen = truelen + 2*countSpc -1; 
+			int actLen = str.length -1; 
 			truelen = truelen - 1;
 			//Pass2: Replace spaces
 			while(truelen >= 0 ){
