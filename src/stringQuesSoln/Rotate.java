@@ -19,7 +19,7 @@ public class Rotate {
 		reverse(end, cStr.length);
 		return String.valueOf(cStr);
 	}
-	private static char[] reverse(int i, int len) {
+	private static void reverse(int i, int len) {
 		len = len - 1;
 		char temp;
 		while(i < len){
@@ -27,6 +27,5 @@ public class Rotate {
 			cStr[i++] = cStr[len];
 			cStr[len--] = temp;
 		}
-		return cStr;
 	}
 }
