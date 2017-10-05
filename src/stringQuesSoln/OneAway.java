@@ -48,4 +48,6 @@ public class OneAway {
 		}
 		return false;
 	}	
+	
+	// Number to edits to get the 2nd string.
 }

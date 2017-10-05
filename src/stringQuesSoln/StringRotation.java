@@ -46,4 +46,8 @@ public class StringRotation {
 		}
 	}
 	
+	private static boolean isSubstring2(String substr) {
+		return true;
+	}
+	
 }

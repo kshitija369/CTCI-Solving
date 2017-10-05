@@ -32,4 +32,8 @@ public class Palindrome {
 		}			
 		return true;
 	}
+	
+	// Solve by recurssion.
+	/*
+	 */
 }
